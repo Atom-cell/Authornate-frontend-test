@@ -1,0 +1,43 @@
+p {
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+.logo {
+  width: 15%;
+  /* height: 15%; */
+}
+
+.header_right {
+  display: flex;
+}
+.print {
+  display: flex;
+  align-items: center;
+}
+.wallet_connection_wrapper {
+  display: flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
+  background-color: #121212;
+  border-radius: 1em;
+  border: 0.5em solid black;
+}
+.greendot {
+  background-color: #32a240;
+  height: 0.6em;
+  width: 0.6em;
+  border-radius: 50%;
+}
+.wallets {
+  background-color: #121212;
+  color: #32a240;
+  border: none;
+}

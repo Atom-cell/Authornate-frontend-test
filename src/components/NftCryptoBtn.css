@@ -1,0 +1,25 @@
+.btn_group_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.btn_group {
+  background-color: #1f1f1f;
+  border-radius: 5em;
+  /* width: 14%; */
+}
+
+.btn {
+  /* width: 10%; */
+  border-radius: 5em;
+  padding: 1em;
+  background-color: #1f1f1f;
+  border: none;
+  margin: 0.5em;
+}
+#active {
+  background-color: #34a642;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

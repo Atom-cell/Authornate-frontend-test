@@ -1,0 +1,84 @@
+.table_wrapper {
+  background-color: #131313;
+  border-radius: 1em;
+  width: 100%;
+  margin-top: 2em;
+}
+.wallet {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 1em;
+  /* margin-right: 1em; */
+}
+.wallet thead th {
+  text-align: center;
+  border-bottom: 2px solid #191919;
+  padding-bottom: 2em;
+}
+.wallet tbody tr {
+  background-color: #191919;
+}
+.wallet tbody td {
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+}
+.tablePro {
+  align-self: center;
+  margin-left: 3em;
+  padding: 0.5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: linear-gradient(90.52deg, #4e87bc 20.89%, #34a642 110.96%),
+    linear-gradient(0deg, #f8f8f8, #f8f8f8);
+}
+td > img {
+  width: 5%;
+  margin-right: 1em;
+}
+
+.cube {
+  width: 3%;
+  height: 3%;
+  background-color: #38bb47;
+  border-radius: 2em;
+  margin-right: 5em;
+}
+.cube img {
+  width: 100%;
+}
+
+/* TABLE BLUR */
+.tableblur_wrapper {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-color: #131313;
+  border-radius: 1em;
+  width: 100%;
+  margin-top: 2em;
+}
+.tableblur_text {
+  border-radius: 1em;
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  margin-top: -10em;
+}
+.tableblur_text p {
+  color: #999999;
+}
+.unlockimg {
+  width: 10%;
+}
+
+.blur {
+  margin-right: 5em;
+  margin-bottom: 5em;
+}
