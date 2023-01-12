@@ -1,23 +1,19 @@
 .modal_wrapper {
   display: flex;
-  /* flex-direction: column; */
+
   justify-content: center;
   align-items: center;
 }
 .modal {
   position: fixed;
-  /* top: 13em;
-  bottom: 10em;
-  left: 20em;
-  right: 20em; */
+
   background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  /* width: 50%;
-  height: 50%; */
+
   border-radius: 1em;
   padding: 0.5em 2em 2em 2em;
 }
@@ -75,7 +71,7 @@
   width: 100%;
   padding-left: 1em;
   display: flex;
-  /* justify-content: start; */
+
   align-items: center;
   margin: 1em;
 }

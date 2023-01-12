@@ -8,7 +8,6 @@
   border-collapse: collapse;
   width: 90%;
   margin-left: 1em;
-  /* margin-right: 1em; */
 }
 .wallet thead th {
   text-align: center;
@@ -51,7 +50,6 @@ td > img {
   width: 100%;
 }
 
-/* TABLE BLUR */
 .tableblur_wrapper {
   filter: blur(8px);
   -webkit-filter: blur(8px);

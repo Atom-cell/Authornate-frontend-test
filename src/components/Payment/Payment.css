@@ -12,7 +12,6 @@
   width: 90%;
   padding-left: 1em;
   display: flex;
-  /* justify-content: start; */
   align-items: center;
   margin: 1em;
 }
@@ -45,17 +44,14 @@
   margin-left: 1.5em;
   cursor: pointer;
 }
-////////////////////////////////
 
 .header_wrapper1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 2em; */
 }
 .logo1 {
   width: 30%;
-  /* height: 15%; */
 }
 .left_div {
   background-color: #121212;
