@@ -4,6 +4,7 @@ import wallet from "../../Assets/wallet.png";
 import cube from "../../Assets/tableCubes.png";
 import UnlockProButton from "./UnlockProButton";
 import unlock from "../../Assets/unlock.png";
+import pro from "../../Assets/Pro.png";
 const TableBlur = () => {
   return (
     <>
@@ -74,7 +75,10 @@ const TableBlur = () => {
         <h3>Individual Wallet Reports</h3>
         <img src={unlock} alt="unlock" className="unlockimg" />
         <p>Upgrade to access the exclusive reports</p>
-        <UnlockProButton class="tablePro blur" />
+        <button className="tableProBtn blur">
+          <img src={pro} alt="pro" />
+          Unlock Pro
+        </button>
       </div>
     </>
   );
