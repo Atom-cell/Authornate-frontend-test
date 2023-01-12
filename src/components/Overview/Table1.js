@@ -27,10 +27,10 @@ const Table1 = () => {
               <img src={wallet} alt="pro"></img>00xHaPLL71....16TYXPQZA
             </td>
             <td>
-              <UnlockProButton class="tablePro" />
+              <UnlockProButton class="tableProBtn" />
             </td>
             <td>
-              <UnlockProButton class="tablePro" />
+              <UnlockProButton class="tableProBtn" />
             </td>
             <td className="cube">
               <img src={cube} alt="pro" />
@@ -42,10 +42,10 @@ const Table1 = () => {
               <img src={wallet} alt="pro"></img>YZXPQZa1....1PLL7Qs2aCA
             </td>
             <td>
-              <UnlockProButton class="tablePro" />
+              <UnlockProButton class="tableProBtn" />
             </td>
             <td>
-              <UnlockProButton class="tablePro" />
+              <UnlockProButton class="tableProBtn" />
             </td>
             <td className="cube">
               <img src={cube} alt="pro" />
@@ -56,10 +56,10 @@ const Table1 = () => {
               <img src={wallet} alt="pro"></img>00xHaPLL71....16TYXPQZA
             </td>
             <td>
-              <UnlockProButton class="tablePro" />
+              <UnlockProButton class="tableProBtn" />
             </td>
             <td>
-              <UnlockProButton class="tablePro" />
+              <UnlockProButton class="tableProBtn" />
             </td>
             <td className="cube">
               <img src={cube} alt="pro" />

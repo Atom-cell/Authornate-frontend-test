@@ -4,11 +4,16 @@ import logo from "../../Assets/logo.png";
 import metamask from "../../Assets/metamask.png";
 import payment from "../../Assets/payment.png";
 import tick from "../../Assets/tick.png";
+import dots from "../../Assets/footerdots.png";
+import { PaymentPageContext } from "../../Helper/Context";
+
 const Payment = () => {
+  const { paymentPage, setPaymentPage } = React.useContext(PaymentPageContext);
+
   const privileges = [
     "Access detailed reports",
     "Check other wallet's details",
-    "Check other wallet’s details",
+    "Access special graphs",
     "Find your whales",
   ];
   return (
@@ -17,11 +22,14 @@ const Payment = () => {
         <img src={logo} alt="logo" className="logo1" />
         <div className="text">
           <h1>Track the value </h1>
-          <h2>of your assets</h2>
-          <p style={{ color: "#FFFFFF75" }}>
+          <h2 style={{ marginTop: "-1em" }}>of your assets</h2>
+          <p style={{ color: "#FFFFFF75", fontSize: "0.7rem" }}>
             Track the value of your assets from any platform all in one place
           </p>
           <img src={payment} alt="payment"></img>
+        </div>
+        <div className="dots">
+          <img src={dots} alt="Dots" />
         </div>
       </div>
       <div className="right_div">
@@ -35,11 +43,17 @@ const Payment = () => {
           </select>
         </div>
         <p>Payment Details</p>
-        <p style={{ color: "#FFFFFF75" }}>
+        <p
+          style={{
+            color: "#FFFFFF75",
+            fontSize: "0.7rem",
+            marginLeft: "1.5em",
+          }}
+        >
           This will be a one-time payment that will help you to gain access for
           the all premium features
         </p>
-        <p style={{ color: "#FFFFFF75" }}>Privileges</p>
+        <p style={{ color: "#FFFFFF75", marginTop: "3em" }}>Privileges</p>
         {privileges.map((p, i) => {
           return (
             <div className="priv" key={i}>
@@ -53,7 +67,10 @@ const Payment = () => {
           <p>Premium Membership</p>
           <h2>$10</h2>
         </div>
-        <button className="complete_payment">
+        <button
+          className="complete_payment"
+          onClick={() => setPaymentPage(false)}
+        >
           <p>Complete Payment</p>
         </button>
       </div>

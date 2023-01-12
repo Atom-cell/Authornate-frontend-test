@@ -4,8 +4,10 @@ import pro from "../../Assets/Pro.png";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5percent from "@amcharts/amcharts5/percent";
 import UnlockProButton from "./UnlockProButton";
+import ProModal from "../Modal/ProModal";
 
 const PieChart = () => {
+  const [showModal, setShowModal] = React.useState(false);
   React.useLayoutEffect(() => {
     let root = am5.Root.new("chartdiv");
     let chart = root.container.children.push(
@@ -36,25 +38,33 @@ const PieChart = () => {
     { title: "Neutral", num: 372, color: "#79B4D5" },
     { title: "Poor", num: 193, color: "#6462E1" },
   ];
+  const closeModal = (f) => {
+    setShowModal(false);
+  };
+  const showModalFunc = (t) => setShowModal(true);
   return (
-    <div className="pie_wrapper">
-      <div className="types">
-        <h2>
-          Analysing <span style={{ color: "white" }}>1873</span> Wallet
-        </h2>
-        {pies.map((p, i) => {
-          return (
-            <div
-              className="pie_pill"
-              key={i}
-              style={{ backgroundColor: p.color }}
-            >
-              <p>{p.title}</p> <UnlockProButton class="pro" />
-            </div>
-          );
-        })}
+    <div>
+      {showModal ? <ProModal closeModal={closeModal} /> : null}
+      <div className="pie_wrapper">
+        <div className="types">
+          <h2>
+            Analysing <span style={{ color: "white" }}>1873</span> Wallet
+          </h2>
+          {pies.map((p, i) => {
+            return (
+              <div
+                className="pie_pill"
+                key={i}
+                style={{ backgroundColor: p.color }}
+              >
+                <p>{p.title}</p>{" "}
+                <UnlockProButton class="probtn" showModalFunc={showModalFunc} />
+              </div>
+            );
+          })}
+        </div>
+        <div id="chartdiv" style={{ width: "40%", height: "30em" }}></div>
       </div>
-      <div id="chartdiv" style={{ width: "40%", height: "30em" }}></div>
     </div>
   );
 };
